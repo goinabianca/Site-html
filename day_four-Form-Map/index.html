@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Food and Fruits</title>
+</head>
+<body>
+    <h1>Explore Destinations</h1>
+    
+    <!-- Image Map -->
+    <h2>Fruits</h2>
+    <img class="center" src="img/Deluxe-fruit-bowl.webp" alt="Fruits Map" usemap="#worldmap">
+    <map name="worldmap">
+        <area shape="rect" coords="488,509,303,334" href="https://en.wikipedia.org/wiki/Strawberry" target="_blank" alt="strawberry">
+        <area shape="circle" coords="515,665,158" href="https://en.wikipedia.org/wiki/Apple" target="_blank" alt="apple">
+        <area shape="poly" coords="1112,473,1099,552,697,287,502,348,439,294,558,231,729,218,870,269,1004,357,1070,420" href="https://en.wikipedia.org/wiki/Banana" target="banana">
+    </map>
+
+    
+    <div class="form-container">
+        <h2>Travel Interest Form</h2>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+    
+            <div class="form-group">
+                <label for="destination">Favourite Romanin Food:</label>
+                <select id="destination" name="favourite romanian food">
+                    <option value="sarmale">Sarmale</option>
+                    <option value="mamaliga cu branza">Mămăliga cu brânză</option>
+                    <option value="ciorbă de burtă">Ciorbă de burtă</option>
+                    <option value="mici">Mici</option>
+                    <option value="papanași">Papanași</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="date">When would you like to come to Romania?:</label>
+                <input type="date" id="date" name="date">
+            </div>
+    
+            <div class="form-group">
+                <label>Special Preferences:</label>
+                <table>
+                    <tr>
+                        <td><label for="family-friendly">Family-friendly</label></td>
+                        <td><input type="checkbox" id="family-friendly" name="preferences" value="family-friendly"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="budget">Budget-friendly</label></td>
+                        <td><input type="checkbox" id="budget" name="preferences" value="budget"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="luxury">Luxury</label></td>
+                        <td><input type="checkbox" id="luxury" name="preferences" value="luxury"></td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="form-group">
+                <label>Accommodation Type:</label>
+                <table>
+                    <tr>
+                        <td><label for="hotel">Hotel</label></td>
+                        <td><input type="radio" id="hotel" name="accommodation" value="hotel"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="hostel">Hostel</label></td>
+                        <td><input type="radio" id="hostel" name="accommodation" value="hostel"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="vacation-rental">Vacation Rental</label></td>
+                        <td><input type="radio" id="vacation-rental" name="accommodation" value="vacation-rental"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-group">
+                <label>Extra Things:</label>
+                <table>
+                    <tr>
+                        <td><label for="towels">Towels</label></td>
+                        <td><input type="checkbox" id="towels" name="preferences" value="towels"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="toothpaste-and-toothbrush">Toothpaste and Toothbrush</label></td>
+                        <td><input type="checkbox" id="toothpaste-and-toothbrush" name="preferences" value="toothpaste-and-toothbrush"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="snacks">Snacks</label></td>
+                        <td><input type="checkbox" id="snacks" name="preferences" value="snacks"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-group">
+                <label>Select what meals would you like to take?:</label>
+                <table>
+                    <tr>
+                        <td><label for="breakfast-and-lunch">Breakfast and Lunch</label></td>
+                        <td><input type="radio" id="breakfast-and-lunch" name="meals" value="breakfast-and-lunch"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="breakfast-and-dinner">Breakfast and Dinner</label></td>
+                        <td><input type="radio" id="breakfast-and-dinner" name="meals" value="breakfast-and-dinner"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lunch-and-dinner">Lunch and Dinner</label></td>
+                        <td><input type="radio" id="lunch-and-dinner" name="meals" value="lunch-and-dinner"></td>
+                    </tr>
+                </table>
+            </div>
+
+    
+            <div class="form-group">
+                <label for="comments">Tell us if you would like anything more:</label>
+                <textarea id="comments" name="comments" rows="6" placeholder="Any other preferences or comments..."></textarea>
+            </div>
+    
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    
+    </body>
+    </html>
+    
